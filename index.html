@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEKXTILL - Catalogue de Produits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="acceuil.html" class="logo-link">
+                    <img src="src/logo/IMG_4842.JPG" alt="TEKXTILL Logo" class="logo-img">
+                    <h1 class="brand-name">TEKXTILL</h1>
+                </a>
+            </div>
+            
+            <nav class="main-nav" id="mainNav">
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                </button>
+                
+                <!-- Navigation links -->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="acceuil.html" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="index.html" class="nav-link active"><i class="fas fa-store"></i> Catalogue</a></li>
+                    <li><a href="apropos.html" class="nav-link"><i class="fas fa-info-circle"></i> À Propos</a></li>
+                </ul>
+                
+                <!-- Cart icon -->
+                <div class="nav-actions">
+                    <div class="cart-icon" id="cartIcon" aria-label="Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="page-title-container">
+            <h1 class="page-title">Notre Collection</h1>
+            <p class="page-subtitle">Découvrez nos produits authentiques et élégants</p>
+        </div>
+        
+        <div class="products" id="productsContainer">
+            <!-- Products will be loaded here via JavaScript -->
+            <div class="loading-spinner" id="productsLoading"></div>
+        </div>
+        
+        <div class="custom-order">
+            <h2 class="section-title">Commande Personnalisée</h2>
+            <p class="section-description">Besoin d'un produit sur mesure? Faites-nous part de vos exigences spécifiques.</p>
+            <form id="customOrderForm" class="custom-order-form">
+                <div class="form-group">
+                    <label for="name">Votre Nom</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError">Veuillez entrer votre nom</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError">Veuillez entrer une adresse email valide</span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numéro de Téléphone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phoneError">Veuillez entrer un numéro de téléphone valide</span>
+                </div>
+                <div class="form-group">
+                    <label for="orderDetails">Détails de la Commande</label>
+                    <textarea id="orderDetails" name="orderDetails" required></textarea>
+                    <span class="error-message" id="orderDetailsError">Veuillez fournir les détails de votre commande</span>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer ma Demande</button>
+                <div class="success-message" id="formSuccess">Votre demande a été envoyée avec succès!</div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="cart-panel" id="cartPanel">
+        <button class="close-cart" id="closeCart" aria-label="Close cart">✕</button>
+        <h2 class="cart-title">Votre Panier</h2>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here via JavaScript -->
+            <p class="empty-cart-message" id="emptyCart">Votre panier est vide.</p>
+        </div>
+        <div class="cart-total">Total: <span id="cartTotal">0.00</span> UM</div>
+        <button class="checkout-btn" id="checkoutBtn">Passer à la caisse</button>
+    </div>
+    
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal" aria-label="Close modal">✕</button>
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="mainProductImage" src="" alt="Product">
+                </div>
+                <div class="thumbnail-images" id="thumbnailContainer">
+                    <!-- Thumbnail images will be loaded here -->
+                </div>
+            </div>
+            <div class="product-details">
+                <h2 id="modalProductTitle" class="modal-product-title"></h2>
+                <div class="price-container">
+                    <p class="original-price" id="originalPrice"></p>
+                    <p class="discounted-price" id="discountedPrice"></p>
+                    <span class="discount-badge" id="discountBadge"></span>
+                </div>
+                <div class="product-description" id="productDescription"></div>
+                <div class="action-buttons">
+                    <button class="add-to-cart-modal" id="addToCartModal">Ajouter au Panier</button>
+                    <a href="#" class="whatsapp-btn-modal" id="whatsappBtnModal" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Demander sur WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-heading">TEKXTILL</h3>
+                <p class="footer-text">AUTHENTIQUE. ÉLÉGANT. AFRICAIN.</p>
+                <p class="footer-text">CEO-Fondateur: Abdelaziz DJIGO</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Contact</h3>
+                <p class="footer-text"><i class="fas fa-phone"></i> +222 38342468</p>
+                <p class="footer-text"><i class="fas fa-phone"></i> +221 77095660</p>
+                <p class="footer-text"><i class="fas fa-envelope"></i> tekxtill.contact@gmail.com</p>
+                <p class="footer-text"><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal / Nouakchott, Mauritanie</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright-text">&copy; 2025 TEKXTILL. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+    <script src="products.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

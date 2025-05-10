@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEKXTILL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="overlay" id="overlay"></div>
+    <header class="navbar">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="acceuil.html"><img src="src/logo/IMG_4842.JPG" alt="TEKXTILL Logo" class="logo-img"></a>
+                <h1 class="brand-name">TEKXTILL</h1>
+            </div>
+            
+            <nav class="main-nav" id="mainNav">
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                </button>
+                
+                <!-- Navigation links -->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="acceuil.html" class="nav-link active"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-store"></i> Catalogue</a></li>
+                    <li><a href="apropos.html" class="nav-link"><i class="fas fa-info-circle"></i> À Propos</a></li>
+                </ul>
+                
+
+            </nav>
+        </div>
+    </header>
+
+        
+        <div class="custom-order">
+            <h2>Request Custom Order</h2>
+            <form id="customOrderForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="orderDetails">Custom Order Details</label>
+                    <textarea id="orderDetails" name="orderDetails" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Custom Order</button>
+            </form>
+        </div>
+    </div>
+    
+
+    
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>TEKXTILL</h3>
+            <p>AUTHENTIQUE. ÉLÉGANT. AFRICAIN.</p>
+            <p>CEO-Fondateur: Abdelaziz DJIGO</p>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>📞 +222 38342468</p>
+            <p>📞 +221 77095660</p>
+            <p>✉️ tekxtill.contact@gmail.com</p>
+            <p>Dakar, Sénégal / Nouakchott, Mauritanie</p>
+        </div>
+        <div class="footer-column">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-times"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TEKXTILL. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
