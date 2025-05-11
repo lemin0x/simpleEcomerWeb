@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - TEKXTILL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Contact Page Specific Styles */
+        .contact-hero {
+            background-color: #f8f5f2;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .ceo-profile {
+            max-width: 1000px;
+            margin: 3rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .ceo-photo {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #d1a67d;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .ceo-info {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+        
+        .ceo-name {
+            color: #d1a67d;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .ceo-title {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+        
+        .ceo-bio {
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(18, 140, 126, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .ceo-profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .ceo-info {
+                text-align: center;
+            }
+            
+            .ceo-photo {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="src/logo/IMG_4842.JPG" alt="TEKXTILL Logo" class="logo-img"></a>
+                <h1 class="brand-name">TEKXTILL</h1>
+            </div>
+            
+            <nav class="main-nav" id="mainNav">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                    <span class="menu-icon-bar"></span>
+                </button>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="product.html" class="nav-link"><i class="fas fa-store"></i> Catalogue</a></li>
+                    <li><a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                
+                <!-- <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div> -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <h2>Contacts</h2>
+        <p>Nous sommes toujours ravis d'entendre parler de vous</p>
+    </section>
+
+    <!-- CEO Profile Section -->
+    <section class="container">
+        <div class="ceo-profile">
+            <img src="src/logo/293009219_7696396497098017_6467119998666574634_n.jpg" alt="Abdelaziz DJIGO, Fondateur de TEKXTILL" class="ceo-photo">
+            
+            <div class="ceo-info">
+                <h3 class="ceo-name">Abdelaziz DJIGO</h3>
+               
+                <p class="ceo-title">Fondateur & CEO de TEKXTILL</p>
+                <hr>
+                <p class="ceo-bio">
+                    Après mûre réflexion et face aux réalités du marché de l’emploi en Mauritanie </br>— notamment le manque d’opportunités, le déficit de transparence et les difficultés d’insertion professionnelle </br>— j’ai décidé de prendre un nouveau tournant : me lancer dans l’entrepreneuriat.
+                    Titulaire d’un Master en Environnement et Développement Durable (EDD) et actuellement en préparation de mon second master en gestion des activités extractives et développement</br>Je choisis aujourd’hui de transformer les obstacles en opportunités. Ce choix n’est pas un renoncement, mais une conviction profonde : celle de croire en mes compétences, en mon potentiel et surtout en la possibilité de créer de la valeur ici, chez nous.
+                    Je suis conscient que ce chemin ne sera pas simple, mais je suis prêt à relever le défi avec détermination, passion et persévérance.
+                    <br>Merci à toutes celles et ceux qui me soutiennent dans cette nouvelle aventure. 
+                 
+                    <hr>
+                   Abdelaziz Djigo
+                </p>
+                
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <h4><i class="fas fa-envelope"></i> Email</h4>
+                        <p>abdelaziz@tekxtill.com</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h4><i class="fas fa-phone"></i> Téléphone</h4>
+                        <p>+222 38342468</p>
+                        <p>+221 77095660</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Team Contact Section -->
+    <section class="container" style="max-width: 1000px; margin: 4rem auto;">
+        <h3 style="text-align: center; margin-bottom: 2rem;">Services</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="contact-card">
+                <h4><i class="fas fa-headset"></i>  Service Client</h4>
+                <p>Email: tekxtill.contact@gmail.com</p>
+                <p>Numéro:  +222 38342468 </p>
+            </div>
+            
+            <div class="contact-card">
+                <h4><i class="fas fa-shipping-fast"></i>  Livraison</h4>
+                <p>Nouakchott, Mauritanie</p>
+                <p>Dakar, Sénégal</p>
+            </div>
+            
+
+        </div>
+    </section>
+<section>
+    <h2 class="section-title">Commande Personnalisée</h2>
+    <p class="section-description">Besoin d'un produit sur mesure? Faites-nous part de vos exigences spécifiques.</p>
+    <a href="https://wa.me/22238342468" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> Envoyer un message WhatsApp
+    </a>
+
+</section>
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3 class="footer-heading" style="color: #d1a67d;">TEKXTILL</h3>
+            <p class="footer-text">AUTHENTIQUE. ÉLÉGANT. AFRICAIN.</p>
+            <p class="footer-text">CEO-Fondateur: Abdelaziz DJIGO</p>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-heading">Contact</h3>
+            <p class="footer-text"><i class="fas fa-phone"></i> +222 38342468</p>
+            <p class="footer-text"><i class="fas fa-phone"></i> +221 77095660</p>
+            <p class="footer-text"><i class="fas fa-envelope"></i> tekxtill.contact@gmail.com</p>
+            <p class="footer-text"><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal / Nouakchott, Mauritanie</p>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-heading">Suivez-nous</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/16T6Rc2HAk/?mibextid=wwXIfr" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/16T6Rc2HAk/?mibextid=wwXIfr" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="copyright-text">&copy; 2025 TEKXTILL. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+    <script>
+        // Mobile Menu Functionality (same as your other pages)
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const navLinks = document.getElementById('navLinks');
+            const overlay = document.getElementById('overlay');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                overlay.style.display = navLinks.classList.contains('active') ? 'block' : 'none';
+                
+                // Animate hamburger icon
+                const bars = document.querySelectorAll('.menu-icon-bar');
+                if (navLinks.classList.contains('active')) {
+                    bars[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                    bars[1].style.opacity = '0';
+                    bars[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+                } else {
+                    bars.forEach(bar => {
+                        bar.style.transform = '';
+                        bar.style.opacity = '';
+                    });
+                }
+            });
+            
+            // Close menu when clicking on overlay or links
+            overlay.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                overlay.style.display = 'none';
+                resetMenuIcon();
+            });
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    overlay.style.display = 'none';
+                    resetMenuIcon();
+                });
+            });
+            
+            function resetMenuIcon() {
+                const bars = document.querySelectorAll('.menu-icon-bar');
+                bars.forEach(bar => {
+                    bar.style.transform = '';
+                    bar.style.opacity = '';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

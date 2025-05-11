@@ -1,11 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEKXTILL - Authentique. Élégant. Africain.</title>
+    <title>TEKXTILL - Catalogue de Produits</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,11 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header class="navbar">
         <div class="header-container">
             <div class="logo-container">
-                <a href="#" class="logo-link">
+                <a href="index.html" class="logo-link">
                     <img src="src/logo/IMG_4842.JPG" alt="TEKXTILL Logo" class="logo-img">
                     <h1 class="brand-name">TEKXTILL</h1>
                 </a>
@@ -33,74 +30,75 @@
                 
                 <!-- Navigation links -->
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="#" class="nav-link active"><i class="fas fa-home"></i> Accueil</a></li>
-                    <li><a href="product.html" class="nav-link"><i class="fas fa-store"></i> Catalogue</a></li>
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="product.html" class="nav-link active"><i class="fas fa-store"></i> Catalogue</a></li>
                     <li><a href="contacts.html" class="nav-link"><i class="fas fa-info-circle"></i> À Propos</a></li>
                 </ul>
+                
+                <!-- Cart icon -->
+                <div class="nav-actions">
+                    <div class="cart-icon" id="cartIcon" aria-label="Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
+    
+    <div class="container">
+        <div class="page-title-container">
+            <h1 class="page-title">Notre Collection</h1>
+            <p class="page-subtitle">Découvrez nos produits authentiques et élégants</p>
+        </div>
+        
+        <div class="products" id="productsContainer">
+            <!-- Products will be loaded here via JavaScript -->
+            <div class="loading-spinner" id="productsLoading"></div>
+        </div>
+        
 
-    <section class="hero-banner">
-        <div class="hero-content-wrapper">
-            <div class="hero-logo-container">
-                <img src="src/logo/IMG_4842.JPG" alt="TEKXTILL Logo" class="hero-brand-logo">
+    <div class="cart-panel" id="cartPanel">
+        <button class="close-cart" id="closeCart" aria-label="Close cart">✕</button>
+        <h2 class="cart-title">Votre Panier</h2>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here via JavaScript -->
+            <p class="empty-cart-message" id="emptyCart">Votre panier est vide.</p>
+        </div>
+        <div class="cart-total">Total: <span id="cartTotal">0.00</span> UM</div>
+        <button class="checkout-btn" id="checkoutBtn">Passer à la caisse</button>
+    </div>
+    
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal" aria-label="Close modal">✕</button>
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="mainProductImage" src="" alt="Product">
+                </div>
+                <div class="thumbnail-images" id="thumbnailContainer">
+                    <!-- Thumbnail images will be loaded here -->
+                </div>
             </div>
-            <div class="hero-text-content">
-                <h2 class="hero-title">TEKXTILL</h2>
-                <p class="hero-subtitle">AUTHENTIQUE. ÉLÉGANT. AFRICAIN.</p>
-                <p class="hero-tagline">Porte ta culture avec fierté</p>
-                <div class="hero-cta-container">
-                    <a href="product.html" class="hero-cta-button">Découvrir nos produits</a>
+            <div class="product-details">
+                <h2 id="modalProductTitle" class="modal-product-title"></h2>
+                <div class="price-container">
+                    <p class="original-price" id="originalPrice"></p>
+                    <p class="discounted-price" id="discountedPrice"></p>
+                    <span class="discount-badge" id="discountBadge"></span>
+                </div>
+                <div class="product-description" id="productDescription"></div>
+                <div class="action-buttons">
+                    <button class="add-to-cart-modal" id="addToCartModal">Ajouter au Panier</button>
+                    <a href="#" class="whatsapp-btn-modal" id="whatsappBtnModal" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Demander sur WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="greeting-section">
-        <div class="greeting-container">
-            <div class="greeting-content">
-                <h2 class="greeting-title">Bienvenue chez TEKXTILL</h2>
-                <div class="greeting-text">
-                    <p>Notre aventure est née d'une passion profonde pour les textiles traditionnels et le désir de valoriser notre riche patrimoine culturel à travers des créations modernes et authentiques.<br> Chez TEKXTILL, chaque motif, chaque couleur, chaque tissu raconte une histoire <br>— celle de nos racines, de notre identité, et de notre savoir-faire.</p>
-                    
-                    <p>Notre mission est simple : offrir des produits uniques, inspirés de nos traditions, tout en répondant aux attentes d'un monde en constante évolution. Grâce à une équipe engagée et créative, nous mettons en avant la qualité, l'élégance et l'originalité dans tout ce que nous proposons.</p>
-                    
-                    <p>Merci de faire partie de cette belle aventure. Ensemble, faisons rayonner la tradition avec style.</p>
-                </div>
-            </div>
-            <!-- <div class="greeting-image">
-                <img src="src/images/artisanat-textile.jpg" alt="Artisanat textile traditionnel">
-            </div> -->
-        </div>
-    </section>
-
-    <section class="features-section">
-        <div class="features-container">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-tshirt"></i>
-                </div>
-                <h3 class="feature-title">Qualité Premium</h3>
-                <p class="feature-text">Des textiles soigneusement sélectionnés pour leur qualité exceptionnelle.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-hands-helping"></i>
-                </div>
-                <h3 class="feature-title">Artisanat Local</h3>
-                <p class="feature-text">Soutien aux artisans locaux et préservation des techniques traditionnelles.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-paint-brush"></i>
-                </div>
-                <h3 class="feature-title">Design Unique</h3>
-                <p class="feature-text">Designs exclusifs alliant tradition africaine et tendances contemporaines.</p>
-            </div>
-        </div>
-    </section>
-
+    </div>
+    
     <div class="overlay" id="overlay"></div>
     
     <footer class="footer">
@@ -133,5 +131,6 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script src="products.js"></script>
 </body>
 </html>

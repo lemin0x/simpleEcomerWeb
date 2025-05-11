@@ -39,7 +39,7 @@ const domElements = {
   
   // Configuration
   const config = {
-    whatsappNumber: "+212773762857", // Replace with your actual WhatsApp business number
+    whatsappNumber: "+22238342468", 
   };
   
   // State management
@@ -204,7 +204,7 @@ const domElements = {
     
     checkout() {
       if (state.cart.length === 0) {
-        alert('Your cart is empty');
+        alert('vide');
         return;
       }
       
@@ -214,7 +214,7 @@ const domElements = {
       
       const total = state.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
       
-      const message = `I would like to purchase:\n${itemsText}\n\nTotal: ${total.toFixed(2)} UM`;
+      const message = `Je souhaite acheter :\n${itemsText}\n\nTotal: ${total.toFixed(2)} UM`;
       
       window.open(`https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
     }
@@ -295,7 +295,7 @@ const domElements = {
       
       // Update WhatsApp button
       if (domElements.whatsappBtnModal) {
-        domElements.whatsappBtnModal.href = `https://wa.me/${config.whatsappNumber}?text=I'm%20interested%20in%20${encodeURIComponent(product.name)}`;
+        domElements.whatsappBtnModal.href = `https://wa.me/${config.whatsappNumber}?text=je%20suis%20intéressé%20par%20${encodeURIComponent(product.name)}`;
       }
       
       // Show modal
@@ -382,8 +382,8 @@ const domElements = {
             <div class="product-info">
                 <h3 class="product-title open-modal" data-id="${product.id}">${product.name}</h3>
                 ${priceHTML}
-                <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
-                <a href="https://wa.me/${config.whatsappNumber}?text=I'm%20interested%20in%20${encodeURIComponent(product.name)}" 
+                <button class="add-to-cart" data-id="${product.id}">jouter au panier</button>
+                <a href="https://wa.me/${config.whatsappNumber}je%20suis%20intéressé%20par%20${encodeURIComponent(product.name)}" 
                    class="whatsapp-btn" target="_blank" aria-label="Contact on WhatsApp about ${product.name}">
                    <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>

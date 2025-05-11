@@ -2,78 +2,92 @@ const productsData = {
     products: [
         {
             id: 1,
-            name: "Boubou Traditionnel - Collection Élégance",
-            originalPrice: 15000,
+            name: "Chemise Blanche Artisanal",
+            originalPrice: 25000,
             discount: 10,
-            discountedPrice: 13500,
+            discountedPrice: 22500,
             images: [
-                "src/products/boubou1_1.jpg",
-                "src/products/boubou1_2.jpg",
-                "src/products/boubou1_3.jpg"
+                "src/image2.png", 
             ],
-            description: "Boubou traditionnel confectionné avec le plus grand soin par nos artisans. Ce vêtement incarne l'élégance africaine avec ses broderies fines et ses motifs emblématiques.",
+            description: " Des chemises traditionnels confectionnés avec le plus grand soin par nos artisans. Chaque pièce est unique, reflétant la richesse culturelle et l'élégance de l'héritage africain à travers des broderies minutieuses et des tissus de qualité supérieure.",
             features: [
-                "Tissu de haute qualité",
-                "Broderies à la main",
-                "Disponible en plusieurs tailles",
-                "Livraison dans toute l'Afrique de l'Ouest"
+                "Tissus luxueux et résistants",
+                "Broderies artisanales inspirées de motifs culturels sahéliens",
+
+
             ]
         },
         {
             id: 2,
-            name: "Ensemble Homme - Daraa ",
-            originalPrice: 12000,
+            name: "Chemise bleu foncé",
+            originalPrice:22000,
             discount: 0,
-            discountedPrice: 12000,
+            discountedPrice: 0,
             images: [
-                "src/products/ensemble1_1.jpg",
-                "src/products/ensemble1_2.jpg"
+                "src/image3.png", 
             ],
-            description: "Ensemble homme en Bazin Riche, composé d'une chemise et d'un pantalon. Le toucher soyeux et la brillance du tissu reflètent la richesse de notre patrimoine textile.",
+            description: " Des chemises traditionnels confectionnés avec le plus grand soin par nos artisans. Chaque pièce est unique, reflétant la richesse culturelle et l'élégance de l'héritage africain à travers des broderies minutieuses et des tissus de qualité supérieure.",
             features: [
-                "Bazin Riche de première qualité",
-                "Coupe moderne et confortable",
-                "Finitions soignées",
-                "Idéal pour les grandes occasions"
+                "Tissus luxueux et résistants",
+                "Broderies artisanales inspirées de motifs culturels sahéliens",
+                "Col sans rabat pour un style épuré et moderne",
+
             ]
         },
         {
             id: 3,
-            name: "Robe Royale - Collection Nouakchott",
-            originalPrice: 18000,
-            discount: 15,
-            discountedPrice: 15300,
+            name: "Chemise Bleu ",
+            originalPrice:22000,
+            discount: 0,
+            discountedPrice: 0,
             images: [
-                "src/products/robe1_1.jpg",
-                "src/products/robe1_2.jpg",
-                "src/products/robe1_3.jpg"
+                "src/image4.png", 
             ],
-            description: "Une robe somptueuse inspirée des traditions mauritaniennes. Cette pièce unique allie l'authenticité des motifs traditionnels à une coupe contemporaine pour un effet majestueux.",
+            description: " Des chemisestraditionnels confectionnés avec le plus grand soin par nos artisans. Chaque pièce est unique, reflétant la richesse culturelle et l'élégance de l'héritage africain à travers des broderies minutieuses et des tissus de qualité supérieure.",
             features: [
-                "Tissu premium avec fils dorés",
-                "Broderies complexes réalisées à la main",
-                "Coupe ajustable",
-                "Pièce unique faite sur commande"
+                "Tissus luxueux et résistants",
+                "Broderies artisanales inspirées de motifs culturels sahéliens",
+                "Col sans rabat pour un style épuré et moderne",
+
             ]
         },
         {
             id: 4,
-            name: "Ensemble Femme - Collection Dakar",
-            originalPrice: 14000,
-            discount: 5,
-            discountedPrice: 13300,
+            name: "Chemise Violet Foncé",
+            originalPrice:22000,
+            discount: 0,
+            discountedPrice: 0,
             images: [
-                "src/products/ensemble2_1.jpg",
-                "src/products/ensemble2_2.jpg"
+                "src/image5.png", 
             ],
-            description: "Ensemble femme inspiré des tendances sénégalaises contemporaines. L'alliance parfaite entre tradition et modernité pour une silhouette raffinée.",
+            description: " Des chemises traditionnels confectionnés avec le plus grand soin par nos artisans. Chaque pièce est unique, reflétant la richesse culturelle et l'élégance de l'héritage africain à travers des broderies minutieuses et des tissus de qualité supérieure.",
             features: [
-                "Coton perlé de qualité supérieure",
-                "Détails en dentelle",
-                "Coupe confortable adaptée au climat africain",
-                "Coloris résistants au lavage"
+                "Tissus luxueux et résistants",
+                "Broderies artisanales inspirées de motifs culturels sahéliens",
+                "Col sans rabat pour un style épuré et moderne",
+
             ]
-        }
+        },
+        {
+            id: 5,
+            name: "Chemise Blue ",
+            originalPrice:22000,
+            discount: 0,
+            discountedPrice: 0,
+            images: [
+                "src/image6.png", 
+            ],
+            description: " Des chemises confectionnés avec le plus grand soin par nos artisans. Chaque pièce est unique, reflétant la richesse culturelle et l'élégance de l'héritage africain à travers des broderies minutieuses et des tissus de qualité supérieure.",
+            features: [
+                "Tissus luxueux et résistants",
+                "Broderies artisanales inspirées de motifs culturels sahéliens",
+                "Col sans rabat pour un style épuré et moderne",
+                "Disponible en plusieurs  tailles",
+
+            ]
+        },
+
+
     ],
 
 
